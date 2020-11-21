@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Motor cautare utilizatori</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			
+			div {
+				float: left;
+			}
+						
+			div#header {
+				float: none;
+				width: 800px;
+				height: 160px;
+				border-bottom: 5px double black;
+				position: fixed;
+				padding: 5%;
+				text-align: center;
+				top: 0;
+				left: 50%;
+				background: white;
+				transform: translateX(-50%);
+				z-index: 10;				
+			}
+			
+			div#header input {
+				font-size: 30px;
+			}
+			
+			div#results {
+				float: none;
+				width: 600px;
+				margin: 180px auto 0;
+				padding-top: 20px;
+			}
+			
+			div#results > div {				
+				width: 100%;
+			}
+			
+			div#results > div > div{
+				margin-right: 40px;
+			}
+						
+		</style>
+	</head>
+	
+	<body>
+		<div id="header">
+			<form autocomplete="off">
+				<input type="text">
+				<input type="submit" value="Filter" id="filter">
+			</form>
+			<p></p>
+		</div>
+		
+		
+		<div id="results">
+		</div>
+
+
+
+
+		<script src="script.js"></script>
+	</body>
+</html>
